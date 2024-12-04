@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2.8rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  padding: 8rem;
+  background-color: hsl(0, 0%, 81%);
+  font-family: "Barlow Semi Condensed";
+  font-size: 1.3rem;
+}
+
+.card {
+  color: aliceblue;
+  padding: 2.4rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0px 2px 6px 2px #00000008;
+}
+
+img {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  border: 0.3rem solid hsla(0, 0%, 100%, 0.746);
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.author-roll {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.bold-text {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.reg-text {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.purple {
+  background-color: hsl(263, 55%, 52%);
+  grid-column: span 2;
+}
+.gray {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.black {
+  background-color: hsl(219, 29%, 14%);
+  grid-column: span 2;
+}
+
+.long-white {
+  align-self: stretch;
+
+  grid-column: 4;
+  grid-row: span 2;
+}
+
+.white {
+  background-color: white;
+  color: #000000;
+}
+
+.white .reg-text,
+.white .author-roll {
+  color: hsla(0, 0%, 0%, 0.58);
+}

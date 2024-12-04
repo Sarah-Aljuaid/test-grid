@@ -1,0 +1,8 @@
+@media (max-width: 32em) {
+  body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.6rem;
+  }
+}
